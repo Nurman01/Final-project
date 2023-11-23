@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="statistics.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Statistics Page</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Kazakh',     11],
+          ['Russian',      2],
+          ['Uyghur',  3],
+          ['Kyrgyz', 2],
+          ['Uzbek',    6]
+        ]);
+
+        var options = {
+          title: 'People who speak the Kazakh language',
+          pieHole: 0.4,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Statistics</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+            </ul>
+        </div>
+    </nav>
+    <div id="donutchart" style="width: 900px; height: 500px;"></div>
+
+    <h3>Population Distribution in Kazakhstan (January 1, 2022)</h3>
+    <h3>Total Population: 19,122,000 people</h3>
+
+    <table>
+        <tr>
+            <th>Ethnic Group</th>
+            <th>Percentage</th>
+        </tr>
+        <tr>
+            <td>Kazakhs</td>
+            <td>69.03%</td>
+        </tr>
+        <tr>
+            <td>Russians</td>
+            <td>18.47%</td>
+        </tr>
+        <tr>
+            <td>Uzbeks</td>
+            <td>3.29%</td>
+        </tr>
+        <tr>
+            <td>Uyghurs</td>
+            <td>1.5%</td>
+        </tr>
+        <tr>
+            <td>Ukrainians</td>
+            <td>1.3%</td>
+        </tr>
+        <tr>
+            <td>Other ethnic groups</td>
+            <td>6.41%</td>
+        </tr>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+/* Reset some default styles and apply a vibrant background color */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #FF5E7D, #8443FF); /* Gradient with Pink and Purple */
+    color: #000; /* Black text */
+    font-family: 'Arial', sans-serif;
+    font-size: 16px; /* Adjust the font size as needed */
+}
+
+/* Style the navigation bar with a gradient background and subtle animation */
+.navbar {
+    background: linear-gradient(to right, #00b894, #00cec9); /* Gradient with Green and Cyan */
+    animation: colorChange 5s infinite alternate;
+}
+
+h3{
+    text-align: center;
+}
+
+/* Style the chart container with a fun background color */
+#donutchart {
+    margin: 20px auto;
+    background: linear-gradient(to right, #ffa502, #ff6348); /* Gradient with Orange and Tomato */
+    border-radius: 15px;
+    padding: 20px;
+}
+
+/* Style the table with a semi-transparent background */
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 15px;
+}
+
+/* Style the table headers */
+th {
+    background-color: #007bff; /* Blue */
+    color: #fff;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Style the table cells */
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Style the footer text with a bold font */
+footer p {
+    font-weight: bold;
+}
+
+/* Add hover effect to the navigation links */
+.navbar-nav a:hover {
+    color: #fdcb6e !important; /* Yellow on hover */
+}
+
+/* Customize the chart title color */
+#donutchart text {
+    fill: #000; /* Black text in the chart */
+}
+
+/* Animation for background color change */
+@keyframes colorChange {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}

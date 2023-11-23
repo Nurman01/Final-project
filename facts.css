@@ -1,0 +1,57 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #3498db, #2ecc71);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: linear-gradient(45deg, #3498db, #2ecc71);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.jumbotron {
+    background: linear-gradient(45deg, #e74c3c, #9b59b6);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.fact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.fact {
+    background: linear-gradient(45deg, #f39c12, #e67e22);
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.fact h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.fact p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Hover effect for facts */
+.fact:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
